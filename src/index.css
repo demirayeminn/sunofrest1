@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-charcoal bg-sand-50 antialiased;
+  }
+}
+
+/* Özel seçim - terracotta vurgu */
+::selection {
+  background-color: rgba(184, 92, 56, 0.2);
+}
+
+/* Hero: metnin arkasında güneş (şık, abartısız) */
+.hero-sun {
+  width: min(320px, 70vw);
+  height: min(320px, 70vw);
+  opacity: 0.45;
+}
+.sun-rays {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  animation: hero-sun-spin 48s linear infinite;
+}
+.sun-ray {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(to top, transparent, rgba(201, 168, 76, 0.55));
+  transform-origin: center bottom;
+}
+.sun-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid rgba(201, 168, 76, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: hero-sun-pulse 6s ease-in-out infinite;
+}
+@keyframes hero-sun-spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes hero-sun-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+  50% { transform: translate(-50%, -50%) scale(1.06); opacity: 0.85; }
+}
+
