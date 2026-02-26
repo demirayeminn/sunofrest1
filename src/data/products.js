@@ -8,12 +8,38 @@ export const productCategories = [
   { id: 'daybed', name: 'Daybed Modelleri' },
 ]
 
+const sezlongS1 = new URL('../../image/sezlong/s1.png', import.meta.url).href
+const sezlongS2 = new URL('../../image/sezlong/s2.png', import.meta.url).href
+const sezlongS3 = new URL('../../image/sezlong/s3.png', import.meta.url).href
+const sezlongS4 = new URL('../../image/sezlong/s4.png', import.meta.url).href
+const sezlongS5 = new URL('../../image/sezlong/s5.png', import.meta.url).href
+const sezlongS6 = new URL('../../image/sezlong/s6.png', import.meta.url).href
+const sezlongS7 = new URL('../../image/sezlong/s7.png', import.meta.url).href
+const sezlongS8 = new URL('../../image/sezlong/s8.png', import.meta.url).href
+const sezlongS9 = new URL('../../image/sezlong/s9.png', import.meta.url).href
+const sezlongSS1 = new URL('../../image/sezlong/ss1.png', import.meta.url).href
+const sezlongSS2 = new URL('../../image/sezlong/ss2.png', import.meta.url).href
+const sezlongSS3 = new URL('../../image/sezlong/ss3.png', import.meta.url).href
+const sezlongSS4 = new URL('../../image/sezlong/ss4.png', import.meta.url).href
+const sezlongSS5 = new URL('../../image/sezlong/ss5.png', import.meta.url).href
+const sezlongSS6 = new URL('../../image/sezlong/ss6.png', import.meta.url).href
+
+const imageSezlong1 = sezlongS1
+const imageSezlong2 = sezlongS4
+const imageSehpa = new URL('../../image/plaj.png', import.meta.url).href
+const imageMasa = new URL('../../image/otel.png', import.meta.url).href
+const imageSandalye = new URL('../../image/otel.png', import.meta.url).href
+const imageDusluk = new URL('../../image/havuzbasi.png', import.meta.url).href
+const imageHavluluk = new URL('../../image/havluluk.png', import.meta.url).href
+const imageDaybed = new URL('../../image/daybed.png', import.meta.url).href
+
 export const products = [
   {
     id: 'sr-lounge-01',
     name: 'SR Lounge 01',
     categoryId: 'sezlong',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop',
+    image: imageSezlong1,
+    images: [sezlongS1, sezlongS2, sezlongS3, sezlongSS1, sezlongSS2, sezlongSS3],
     summary: 'Alüminyum gövdeli, textilen kumaşlı klasik şezlong',
     segment: 'Premium',
     material: 'Toz boyalı alüminyum gövde, UV dayanımlı textilen kumaş',
@@ -30,7 +56,8 @@ export const products = [
     id: 'sr-lounge-02',
     name: 'SR Lounge 02',
     categoryId: 'sezlong',
-    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=400&fit=crop',
+    image: imageSezlong2,
+    images: [sezlongS4, sezlongS5, sezlongS6, sezlongS7, sezlongS8, sezlongS9, sezlongSS4, sezlongSS5, sezlongSS6],
     summary: 'Geniş oturumlu, tekerlekli konfor şezlong',
     segment: 'Signature',
     material: 'Alüminyum + tik kaplama detaylar',
@@ -47,7 +74,7 @@ export const products = [
     id: 'sr-side-01',
     name: 'SR Side 01',
     categoryId: 'sehpa',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop',
+    image: imageSehpa,
     summary: 'Şezlong yanında kullanıma uygun kompakt sehpa',
     segment: 'Standard',
     material: 'Enjeksiyon PP, UV katkılı',
@@ -64,7 +91,7 @@ export const products = [
     id: 'sr-table-01',
     name: 'SR Table 01',
     categoryId: 'masa',
-    image: 'https://images.unsplash.com/photo-1555041469-586f2148af8e?w=600&h=400&fit=crop',
+    image: imageMasa,
     summary: 'Açık alan restoranlar için kare masa',
     segment: 'Premium',
     material: 'Alüminyum gövde, kompakt laminat tabla',
@@ -81,7 +108,7 @@ export const products = [
     id: 'sr-chair-01',
     name: 'SR Chair 01',
     categoryId: 'sandalye',
-    image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop',
+    image: imageSandalye,
     summary: 'İstiflenebilir açık alan sandalyesi',
     segment: 'Standard',
     material: 'Alüminyum + textilen oturum',
@@ -98,7 +125,7 @@ export const products = [
     id: 'sr-shower-01',
     name: 'SR Shower 01',
     categoryId: 'dusluk',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop',
+    image: imageDusluk,
     summary: 'Tek gövdeli dış mekân duş ünitesi',
     segment: 'Premium',
     material: '304 paslanmaz çelik gövde',
@@ -115,7 +142,7 @@ export const products = [
     id: 'sr-towel-01',
     name: 'SR Towel 01',
     categoryId: 'havluluk',
-    image: 'https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=600&h=400&fit=crop',
+    image: imageHavluluk,
     summary: 'Çok katlı havlu dolabı / raf sistemi',
     segment: 'Premium',
     material: 'Laminat gövde, alüminyum detaylar',
@@ -132,7 +159,7 @@ export const products = [
     id: 'sr-daybed-01',
     name: 'SR Daybed 01',
     categoryId: 'daybed',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop',
+    image: imageDaybed,
     summary: 'Pergolalı, çift kişilik lüks daybed',
     segment: 'Signature',
     material: 'Alüminyum gövde, su itici döşeme, perdeli üst yapı',

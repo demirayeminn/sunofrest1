@@ -30,18 +30,18 @@ export default function Header({ menuOpen, setMenuOpen }) {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
         <Link
           to="/"
-          className="font-serif text-2xl md:text-3xl font-semibold text-charcoal tracking-tight shrink-0"
+          className="font-serif text-[28px] md:text-[34px] font-semibold text-charcoal tracking-tight shrink-0 leading-none"
           onClick={closeMenu}
         >
           Sun of Rest
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-9">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="font-sans text-sm font-medium text-charcoal/80 hover:text-terracotta transition-colors tracking-wide"
+              className="font-sans text-[15px] font-medium text-charcoal/80 hover:text-terracotta transition-colors tracking-wide"
               onClick={closeMenu}
             >
               {link.label}
@@ -54,7 +54,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
             href="/katalog.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2.5 bg-terracotta text-sand-50 font-sans text-sm font-medium tracking-wide hover:bg-terracotta-dark transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-3 bg-terracotta text-sand-50 font-sans text-[15px] font-medium tracking-wide hover:bg-terracotta-dark transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -84,7 +84,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
                 key={link.to}
                 to={link.to}
                 onClick={closeMenu}
-                className="font-sans text-lg font-medium text-charcoal hover:text-terracotta transition-colors py-2"
+                className="font-sans text-xl font-medium text-charcoal hover:text-terracotta transition-colors py-2"
               >
                 {link.label}
               </Link>

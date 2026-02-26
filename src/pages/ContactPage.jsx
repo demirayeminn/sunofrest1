@@ -36,8 +36,8 @@ export default function ContactPage() {
                 </a>
               </li>
               <li>
-                <a href="tel:+902421234567" className="text-charcoal hover:underline">
-                  +90 242 123 45 67
+                <a href="tel:+905541488700" className="text-charcoal hover:underline">
+                  +90 (554) 148 87 00
                 </a>
               </li>
             </ul>

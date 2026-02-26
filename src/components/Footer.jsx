@@ -58,8 +58,8 @@ export default function Footer() {
               <a href="mailto:info@sunofrest.com" className="block text-terracotta-light hover:text-terracotta transition-colors">
                 info@sunofrest.com
               </a>
-              <a href="tel:+902421234567" className="block text-sand-200 hover:text-sand-50 transition-colors">
-                +90 242 123 45 67
+              <a href="tel:+905541488700" className="block text-sand-200 hover:text-sand-50 transition-colors">
+                +90 (554) 148 87 00
               </a>
             </address>
           </div>

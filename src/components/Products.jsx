@@ -1,47 +1,57 @@
 import { Link } from 'react-router-dom'
 
+const categoryImages = {
+  sezlong: new URL('../../image/plaj.png', import.meta.url).href,
+  sehpa: new URL('../../image/plaj.png', import.meta.url).href,
+  masa: new URL('../../image/otel.png', import.meta.url).href,
+  sandalye: new URL('../../image/otel.png', import.meta.url).href,
+  dusluk: new URL('../../image/havuzbasi.png', import.meta.url).href,
+  havluluk: new URL('../../image/havluluk.png', import.meta.url).href,
+  daybed: new URL('../../image/daybed.png', import.meta.url).href,
+}
+
 const categories = [
   {
     id: 'sezlong',
     title: 'Şezlong Modelleri',
     description: 'Plaj ve havuz kenarına uygun, UV dayanımlı ve uzun ömürlü şezlong modelleri',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop',
+    image: categoryImages.sezlong,
   },
   {
     id: 'sehpa',
     title: 'Şezlong Sehpa Modelleri',
     description: 'Şezlonglarla uyumlu, dış mekâna dayanıklı sehpa tasarımları',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop',
+    image: categoryImages.sehpa,
   },
   {
     id: 'masa',
     title: 'Masa Çeşitleri',
     description: 'Otel restoranları ve açık alan kullanımı için profesyonel masa modelleri',
-    image: 'https://images.unsplash.com/photo-1555041469-586f2148af8e?w=600&h=400&fit=crop',
+    image: categoryImages.masa,
   },
   {
     id: 'sandalye',
     title: 'Sandalye Çeşitleri',
     description: 'Yoğun kullanıma uygun ergonomik açık alan sandalyeleri',
-    image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop',
+    image: categoryImages.sandalye,
   },
   {
     id: 'dusluk',
     title: 'Duşluklar',
     description: 'Plaj ve havuz alanları için paslanmaz dış mekân duş sistemleri',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop',
+    image: categoryImages.dusluk,
   },
   {
     id: 'havluluk',
     title: 'Havluluklar',
     description: 'Spa ve havuz alanları için düzenleyici havluluk sistemleri',
-    image: 'https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=600&h=400&fit=crop',
+    image: categoryImages.havluluk,
   },
   {
     id: 'daybed',
     title: 'Daybed Modelleri',
     description: 'Lüks otel ve villa projeleri için premium daybed çözümleri',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop',
+    image: categoryImages.daybed,
   },
 ]
 
